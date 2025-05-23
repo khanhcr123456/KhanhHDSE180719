@@ -1,0 +1,344 @@
+/* 
+ * Bloodline DNA Testing Service Management System
+ * Authentication Pages Stylesheet
+ */
+
+.auth-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--light-color);
+}
+
+.auth-container {
+    flex: 1;
+    max-width: 500px;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.auth-header .logo {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.auth-header i {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+.auth-header h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.auth-header p {
+    color: var(--gray-color);
+}
+
+.auth-tabs {
+    display: flex;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.tab-btn {
+    flex: 1;
+    background: none;
+    color: var(--gray-color);
+    padding: 0.75rem;
+    font-weight: 600;
+    border: none;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.tab-btn.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+
+.auth-form-container {
+    flex: 1;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon i:first-child {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gray-color);
+}
+
+.input-icon input {
+    padding-left: 2.5rem;
+}
+
+.input-icon .toggle-password {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gray-color);
+    cursor: pointer;
+}
+
+.password-strength {
+    margin-top: 0.75rem;
+}
+
+.strength-meter {
+    height: 5px;
+    background-color: var(--gray-light);
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+}
+
+.strength-meter span {
+    display: block;
+    height: 100%;
+    width: 0;
+    background-color: var(--accent-color);
+    border-radius: 3px;
+    transition: var(--transition);
+}
+
+.strength-text {
+    font-size: 0.75rem;
+    color: var(--gray-color);
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.remember-me input[type="checkbox"] {
+    width: auto;
+}
+
+.forgot-link {
+    font-size: 0.875rem;
+}
+
+.auth-divider {
+    text-align: center;
+    position: relative;
+    margin: 1.5rem 0;
+}
+
+.auth-divider:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: var(--gray-light);
+}
+
+.auth-divider span {
+    position: relative;
+    background-color: white;
+    padding: 0 1rem;
+    color: var(--gray-color);
+    font-size: 0.875rem;
+}
+
+.social-auth {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn-social {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: white;
+    border: 1px solid var(--gray-light);
+    color: var(--dark-color);
+}
+
+.btn-google:hover {
+    background-color: #ea4335;
+    border-color: #ea4335;
+    color: white;
+}
+
+.btn-facebook:hover {
+    background-color: #3b5998;
+    border-color: #3b5998;
+    color: white;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--gray-light);
+}
+
+.auth-info {
+    flex: 1;
+    background: linear-gradient(rgba(59, 111, 182, 0.8), rgba(59, 111, 182, 0.9)), url('../img/dna-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.info-content {
+    max-width: 500px;
+}
+
+.info-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.auth-features {
+    margin-bottom: 2rem;
+}
+
+.auth-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.auth-features i {
+    color: var(--secondary-color);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+/* Auth Message */
+.auth-message {
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.auth-message.success {
+    background-color: rgba(52, 168, 83, 0.1);
+    color: var(--secondary-color);
+}
+
+.auth-message.error {
+    background-color: rgba(234, 67, 53, 0.1);
+    color: var(--accent-color);
+}
+
+.terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.terms input {
+    width: auto;
+    margin-top: 0.25rem;
+}
+
+.terms label {
+    font-size: 0.875rem;
+    margin-bottom: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .auth-page {
+        flex-direction: column;
+    }
+    
+    .auth-container {
+        max-width: 100%;
+        order: 2;
+    }
+    
+    .auth-info {
+        min-height: 300px;
+        order: 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-row {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    
+    .social-auth {
+        flex-direction: column;
+    }
+} 
