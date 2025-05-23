@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Bloodline DNA Testing Service</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard-page">
+    <header class="dashboard-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-dna"></i> <span>Bloodline</span>
+                </a>
+            </div>
+            
+            <div class="header-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="notification">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </div>
+                
+                <div class="user-menu">
+                    <img src="img/user-avatar.jpg" alt="User Avatar" class="avatar">
+                    <div class="user-info">
+                        <span class="user-name">John Doe</span>
+                        <span class="user-role">Customer</span>
+                    </div>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <nav class="main-nav">
+                <ul>
+                    <li class="active">
+                        <a href="dashboard.html">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="my-tests.html">
+                            <i class="fas fa-vial"></i>
+                            <span>My Tests</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="order-test.html">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Order New Test</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="results.html">
+                            <i class="fas fa-file-medical-alt"></i>
+                            <span>Test Results</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="family-tree.html">
+                            <i class="fas fa-sitemap"></i>
+                            <span>Family Tree</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="messages.html">
+                            <i class="fas fa-comments"></i>
+                            <span>Messages</span>
+                            <span class="badge">5</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="appointments.html">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Appointments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">
+                            <i class="fas fa-user-circle"></i>
+                            <span>My Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li class="logout">
+                        <a href="index.html">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main class="dashboard-main">
+            <div class="page-header">
+                <h1>Dashboard</h1>
+                <p>Welcome back, John! Here's an overview of your DNA testing services.</p>
+            </div>
+            
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <div class="stat-details">
+                        <h3>3</h3>
+                        <p>Active Tests</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="stat-details">
+                        <h3>2</h3>
+                        <p>Completed Tests</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-details">
+                        <h3>1</h3>
+                        <p>Pending Results</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-details">
+                        <h3>1</h3>
+                        <p>Upcoming Appointments</p>
+                    </div>
+                </div>
+            </div>
+            
+            <section class="tests-overview">
+                <div class="section-header">
+                    <h2>Recent Tests</h2>
+                    <a href="my-tests.html" class="view-all">View All</a>
+                </div>
+                
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Test ID</th>
+                                <th>Test Type</th>
+                                <th>Date Ordered</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#BL2023-001</td>
+                                <td>Ancestry DNA Test</td>
+                                <td>Oct 15, 2023</td>
+                                <td><span class="status completed">Completed</span></td>
+                                <td>
+                                    <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
+                                    <button class="action-btn download-btn"><i class="fas fa-download"></i></button>
+                                    <button class="action-btn share-btn"><i class="fas fa-share-alt"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#BL2023-002</td>
+                                <td>Health Predisposition</td>
+                                <td>Nov 02, 2023</td>
+                                <td><span class="status processing">Processing</span></td>
+                                <td>
+                                    <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
+                                    <button class="action-btn track-btn"><i class="fas fa-truck"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#BL2023-003</td>
+                                <td>Paternity Test</td>
+                                <td>Nov 10, 2023</td>
+                                <td><span class="status pending">Sample Pending</span></td>
+                                <td>
+                                    <button class="action-btn view-btn"><i class="fas fa-eye"></i></button>
+                                    <button class="action-btn track-btn"><i class="fas fa-truck"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <div class="dashboard-row">
+                <section class="ancestry-overview">
+                    <div class="section-header">
+                        <h2>Ancestry Breakdown</h2>
+                        <a href="ancestry-details.html" class="view-all">View Details</a>
+                    </div>
+                    
+                    <div class="ancestry-chart-container">
+                        <div class="ancestry-chart">
+                            <canvas id="ancestryChart"></canvas>
+                        </div>
+                        <div class="ancestry-legend">
+                            <div class="legend-item">
+                                <span class="color-box" style="background-color: #4285F4;"></span>
+                                <div class="legend-text">
+                                    <span class="region">Western European</span>
+                                    <span class="percentage">45%</span>
+                                </div>
+                            </div>
+                            <div class="legend-item">
+                                <span class="color-box" style="background-color: #34A853;"></span>
+                                <div class="legend-text">
+                                    <span class="region">Eastern European</span>
+                                    <span class="percentage">25%</span>
+                                </div>
+                            </div>
+                            <div class="legend-item">
+                                <span class="color-box" style="background-color: #FBBC05;"></span>
+                                <div class="legend-text">
+                                    <span class="region">Scandinavian</span>
+                                    <span class="percentage">15%</span>
+                                </div>
+                            </div>
+                            <div class="legend-item">
+                                <span class="color-box" style="background-color: #EA4335;"></span>
+                                <div class="legend-text">
+                                    <span class="region">Mediterranean</span>
+                                    <span class="percentage">10%</span>
+                                </div>
+                            </div>
+                            <div class="legend-item">
+                                <span class="color-box" style="background-color: #9C27B0;"></span>
+                                <div class="legend-text">
+                                    <span class="region">Other</span>
+                                    <span class="percentage">5%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="health-insights">
+                    <div class="section-header">
+                        <h2>Health Insights</h2>
+                        <a href="health-details.html" class="view-all">View All</a>
+                    </div>
+                    
+                    <div class="health-cards">
+                        <div class="health-card">
+                            <div class="health-icon low-risk">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div class="health-info">
+                                <h3>Heart Health</h3>
+                                <p>Low genetic risk</p>
+                            </div>
+                        </div>
+                        <div class="health-card">
+                            <div class="health-icon medium-risk">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="health-info">
+                                <h3>Neurological</h3>
+                                <p>Moderate genetic risk</p>
+                            </div>
+                        </div>
+                        <div class="health-card">
+                            <div class="health-icon low-risk">
+                                <i class="fas fa-bone"></i>
+                            </div>
+                            <div class="health-info">
+                                <h3>Bone Density</h3>
+                                <p>Low genetic risk</p>
+                            </div>
+                        </div>
+                        <div class="health-card">
+                            <div class="health-icon high-risk">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="health-info">
+                                <h3>Eye Health</h3>
+                                <p>Higher genetic risk</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <section class="dna-matches">
+                <div class="section-header">
+                    <h2>DNA Matches</h2>
+                    <a href="matches.html" class="view-all">View All Matches</a>
+                </div>
+                
+                <div class="matches-container">
+                    <div class="match-card">
+                        <img src="img/match-1.jpg" alt="DNA Match" class="match-avatar">
+                        <div class="match-info">
+                            <h3>Sarah Williams</h3>
+                            <p>Predicted relationship: Second Cousin</p>
+                            <p>Shared DNA: 3.2%</p>
+                        </div>
+                        <button class="btn btn-sm">Connect</button>
+                    </div>
+                    <div class="match-card">
+                        <img src="img/match-2.jpg" alt="DNA Match" class="match-avatar">
+                        <div class="match-info">
+                            <h3>Robert Johnson</h3>
+                            <p>Predicted relationship: Third Cousin</p>
+                            <p>Shared DNA: 1.8%</p>
+                        </div>
+                        <button class="btn btn-sm">Connect</button>
+                    </div>
+                    <div class="match-card">
+                        <img src="img/match-3.jpg" alt="DNA Match" class="match-avatar">
+                        <div class="match-info">
+                            <h3>Emily Peterson</h3>
+                            <p>Predicted relationship: Distant Relative</p>
+                            <p>Shared DNA: 0.9%</p>
+                        </div>
+                        <button class="btn btn-sm">Connect</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="recommendation">
+                <div class="section-header">
+                    <h2>Recommended For You</h2>
+                </div>
+                
+                <div class="recommendation-cards">
+                    <div class="rec-card">
+                        <div class="rec-icon">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <div class="rec-content">
+                            <h3>Trait Analysis</h3>
+                            <p>Discover how your genes influence your physical traits, from eye color to taste preferences.</p>
+                            <a href="order-test.html" class="btn">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="rec-card">
+                        <div class="rec-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <div class="rec-content">
+                            <h3>Family Finder</h3>
+                            <p>Expand your family tree by connecting with more distant relatives in our database.</p>
+                            <a href="order-test.html" class="btn">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="rec-card">
+                        <div class="rec-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <div class="rec-content">
+                            <h3>Health Consultation</h3>
+                            <p>Schedule a consultation with our genetic counselors to understand your health insights.</p>
+                            <a href="appointments.html" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <footer class="dashboard-footer">
+        <div class="container">
+            <p>&copy; 2023 Bloodline DNA Testing Services. All Rights Reserved.</p>
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html> 

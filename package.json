@@ -1,0 +1,20 @@
+{
+  "name": "bloodline-dna-testing-service-management-system",
+  "version": "1.0.0",
+  "description": "A comprehensive web-based management system for a DNA testing service company, providing functionality for customers, lab staff, and administrators.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nyuminh/Bloodline-DNA-Testing-Service-Management-System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nyuminh/Bloodline-DNA-Testing-Service-Management-System/issues"
+  },
+  "homepage": "https://github.com/Nyuminh/Bloodline-DNA-Testing-Service-Management-System#readme"
+}
